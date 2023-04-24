@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exercise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+       <script src="validation.js"></script>
+      <script src="processdata.js"></script>
+      
+    </head>
+    <body>
+    <br>
+          <label for="">Numero de filas y columnas de la matriz</label>
+          <input type="text"  name="size" id="size" 
+              maxlength="2"   onkeypress="return onlyNumberKey(event)">
+          <button  onClick="generateData();">Generar datos</button>
+          
+          <div>
+                <table id="tblData" border="1"></table>
+          </div>
+          
+          <div>
+            <button  onClick="generateTransposed();">Generar transpuesta</button>
+           </div>
+        <div>
+                <table id="tblTransposed" border="1"></table>
+         </div>
+          
+    </body>
+    <table border="2">
+        <tbody>
+            <tr><td>celda en la hilera 0, columna 0</td><td>celda en la hilera 0, columna 1</td></tr>
+            <tr><td>celda en la hilera 1, columna 0</td><td>celda en la hilera 1, columna 1</td></tr>
+        </tbody>
+    </table>
+</html>

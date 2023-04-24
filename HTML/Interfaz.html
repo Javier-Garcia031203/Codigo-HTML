@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <title>First page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header class="w3-container w3-blue">
+            <h1>Welcome to HTML5</h1>
+        </header>
+        <main>
+            <div class="w3-container">
+                <p>The w3-container class is an important w3.CSS class.</p>
+              <imagen src="imagen/ITVO-Normal.png" width="50px" heigth="50px" alt="Logo ITVO"></imagen>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Estudiantes</th>
+                            <th>Promedio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oswaldo Miguel Lopez</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>Maros Mendoza Vasquez</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>Ulises Mendez Lopez</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>Javier Ezequiel Garcia Florean</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="https://www.google.com">
+                    <imagen src="https://m2w7f7u8.rocketcdn.me/wp-content/uploads/2022/03/el-logo-g-de-google.png"></imagen>
+                </a>
+                <a href="https://www.microsoft.com">Microsoft</a>
+                <a href="https://www.ibm.com">Ibm</a>
+
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                    <li>Elemento 4</li>
+                </ul>
+
+                <form name="frTest" id="frTest" action="" 
+                    method="post" enctype="multipart/form-data">
+                    <label for="name">Nombre del estudiante</label>
+                    <input type="text" id="name" required="true"
+                    placeholder="Apellidos y nombre"> <br>
+                    <label for="age">Edad</label>
+
+                </form>
+
+                <input type="button" 
+                onclick="alert('Hello, who are you?')"
+                value="Hazme click please">
+            </div>
+        </main>
+        <footer>
+            ITVO 2023
+        </footer>
+        <form action="ejemplo.php" method="get">
+            <p>Nombre: <input type="text" name="nombre" size="40"></p>
+            <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
+            <p>Sexo:
+              <input type="radio" name="hm" value="h"> Hombre
+              <input type="radio" name="hm" value="m"> Mujer
+            </p>
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Borrar">
+            </p>
+          </form>
+          <p>Sexo:
+            <input type="radio" name="hm" value="h" required> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+          </p>
+          
+          <p>Edad:
+            <input type="radio" name="edad" value="menor"> Menor
+            <input type="radio" name="edad" value="adulto" required> Adulto
+          </p>
+          Indique su nivel (Malo, Regular, Bueno):
+<input type="range" name="rango"
+  min="1" max="3" list="lista-rango">
+<datalist id="lista-rango">
+  <option value="1" label="Malo">
+  <option value="2" label="Regular">
+  <option value="3" label="Bueno">
+</datalist>
+
+
+<input type="color" name="colorElegido" value="#ff0000">
+
+
+
+    </body>
+</html>
